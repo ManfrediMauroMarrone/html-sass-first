@@ -1,5 +1,38 @@
-$background: red;
+$background: tomato;
+$buttonBackground: aqua;
+$paragraph: lightblue;
+$titles: lightgreen;
+$buttonText: 20px;
+$buttonMargin: 20px;
+$buttonRadius: 10px;
+$buttonPadding: 20px;
+$cardWidth: 400px;
+$cardPadding: 40px;
+h1,
+h2{
+  color: $titles;
+}
+
+p {
+  color: $paragraph;
+}
 
 button {
+  background-color: $buttonBackground;
+  margin-bottom: $buttonMargin;
+  padding: $buttonPadding / 2 $buttonPadding;
+  border-radius: $buttonRadius * 2;
+  border: 0;
+  font-size: $buttonText;
+}
+
+.card{
+  width: $cardWidth;
+  padding: $cardPadding 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background-color: $background;
 }
